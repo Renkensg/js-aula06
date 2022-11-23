@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font: normal 20pt Arial;
+    }
+  </style>
+</head>
+<body>
+  
+  <script>
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br/>`)  // .length mostra quantos caracteres tem a string.
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)  // .toUpperCase()
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)  // .toLowerCase()
+
+    // Formatando números
+    var n1 = 1543.5
+    n1.toFixed(2)  // Para mostrar o número com duas casas decimais (1543.50)
+    n1.toFixed(2).replace('.', ',')  // Para trocar o "." por "," (1543,50)
+
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})  // Para mostrar o valor em Reais brasileiros (R$ 1,543,50)
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})  // Para mostrar o valor em Dólar (US$ 1,543,50)
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})  // Para mostrar o valor em Euro (€ 1,543,50)
+    </script>
+</body>
+</html>

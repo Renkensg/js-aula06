@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Meu primeiro programa...</title>
+    <style>
+      body {
+        background-color: rgb(105, 105, 173);
+        color: white;
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: rgb(255, 212, 22);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+      var n1 = Number(window.prompt('Digite um número: '))  // O window.prompt transforma o tipo dos valores digitados em String, automaticamente.
+      var n2 = Number(window.prompt('Digite outro número: '))   //  Para transformar String em Number, e conseguir fazer adição, usa-se o Number()
+      var s = n1 + n2
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Com crase, podemos fazer a Template Strings, que é a interpolação do place holder → ${x}
+      // (number + number) para adição
+      // 'string + string' para concatenação
+      // Também podem ser usados: Number.parseInt() para converter em números inteiros, e Number.parseFloat() para converter em números reais/flutuantes.
+      // Também pode ser usado o .toString(), depois de um identificador, para converter em string.
+    </script>
+  </body>
+</html>
